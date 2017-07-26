@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="CarrierDashboard">
+  <test name="LoginPage">
+    <parameter name="browsername" value="chrome"></parameter>
+    <parameter name="filename" value="/home/pradeep/CarrierAutomation.ods"></parameter>
+    <parameter name="url" value="staging"></parameter>
+    <classes>
+      <class name="controller.TestNgClass">
+        <methods>
+           <!--  <include name="setUp"></include> -->
+           <include name="launchSite"></include>
+          
+           <include name="checkSureifytext"></include>
+           
+           <include name="validateLogin3"></include>
+          
+        </methods>
+      </class>
+    </classes>
+  </test> 
+</suite> <!-- WebApp -->

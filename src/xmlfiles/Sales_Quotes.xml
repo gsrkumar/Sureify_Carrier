@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="CarrierDashboard">
+  <test name="SalesPiller_Quotes">
+    <parameter name="browsername" value="chrome"></parameter>
+    <parameter name="filename" value="/home/pradeep/CarrierAutomation.ods"></parameter>
+    <parameter name="url" value="staging"></parameter>
+    <classes>
+      <class name="controller.TestNgClass">
+        <methods>
+           
+           <include name="launchSite"></include>
+           <include name="validEmailAndPwd"></include>
+           
+           <include name="HomePage"></include>
+           <include name="salesPiller"></include>
+           <include name="checkSalesPillerLink"></include>
+            <!-- <include name="checkSalesPillerHeading"></include>
+            <include name="checkSalesPillerHeadingDiscription"></include>
+            <include name="checkQuoteOption"></include>
+            <include name="checkApplicationOption"></include>
+            <include name="checkPaymentOption"></include>
+            <include name="checkPolicyStatusOption"></include>
+            <include name="checkDeviceLogisticsOption"></include>
+            <include name="noOfPolicyHolders"></include>
+            <include name="clickYearly"></include>
+            <include name="clickMonthly"></include>
+            <include name="clickWeekly"></include>
+            
+            <include name="select_SalesQuots_25Rows"></include>
+            <include name="select_SalesQuots_10Rows"></include>
+            <include name="select_SalesQuots_50Rows"></include>
+            <include name="select_SalesQuots_100Rows"></include>
+            <include name="select_SalesQuots_AllRows"></include>
+           <include name="serachRecord"></include> -->
+          <!--  <include name="cancelDelete"></include>
+           <include name="deleteRecord"></include>
+           <include name="deleteWithoutSel"></include> -->
+           
+       <!--     <include name="sortLastVisitedDatecolumn"></include>
+           <include name="sortIDcolumn()"></include>
+           <include name="sortNamecolumn"></include>
+           <include name="sortEmailcolumn"></include>
+           <include name="sortFaceAmountcolumn"></include>
+           <include name="sortTermLencolumn"></include>
+           <include name="sortQuoteYearly_column"></include>
+           <include name="sortAge_column"></include>
+           <include name="sortSex_column"></include>
+           <include name="sortHealth_column"></include>
+           <include name="sortSmoke_column"></include> -->
+        <!--    <include name="downloadCSV_Sales_Quote()"></include>
+        
+           <include name="downloadPDF_Sales_Quote()"></include> -->
+         
+        </methods>
+      </class>
+    </classes>
+  </test> 
+</suite> <!-- WebApp -->

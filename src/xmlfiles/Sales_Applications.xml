@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="CarrierDashboard">
+  <test name="SalesPiller_Application">
+    <parameter name="browsername" value="chrome"></parameter>
+    <parameter name="filename" value="/home/pradeep/CarrierAutomation.ods"></parameter>
+    <parameter name="url" value="staging"></parameter>
+    <classes>
+      <class name="controller.TestNgClass">
+        <methods>
+           
+           <include name="launchSite"></include>
+           <include name="validEmailAndPwd"></include>
+           
+           <include name="HomePage"></include>
+           <include name="salesPiller"></include>
+           <include name="checkSalesPillerLink"></include>
+           
+           <include name="clickSalesApplication()"></include>
+           
+           <!-- <include name="checkSalesApplicationHeading()"></include>
+           <include name="checkSalesApplicationHeadingDis()"></include>
+           <include name="checkSalesAppFirstModule()"></include>
+           <include name="checkSalesAppSecondModule()"></include>
+           <include name="checkSalesAppThirdModule()"></include>
+           <include name="selectSalesApplication25Rows()"></include>
+           <include name="selectSalesapplication10Rows()"></include>
+           <include name="selectSalesApplication50Rows()"></include>
+           <include name="selectSalesApplication100Rows()"></include>
+           <include name="selectSalesApplicationAllRows()"></include> -->
+        
+           <include name="searchSalesApplication()"></include>
+           <include name="deleteSalesAppWithoutSel()"></include>
+           <include name="deleteSalesApplication()"></include>
+           <include name="cancelDeleteSalesApplication()"></include>
+          
+          <!--  
+           <include name="sortSalesAppID()"></include>
+           <include name="sortSalesAppName()"></include>
+           <include name="sortSalesAppFaceAmt()"></include>
+           <include name="sortSalesAppTermLength()"></include>
+           <include name="sortSalesAppProgress()"></include>
+           <include name="sortSalesAppStage()"></include>
+ -->           
+         <!--   <include name="downloadSalesAppCSV()"></include>
+           <include name="downloadSalesAppPDF()"></include> -->
+         
+        </methods>
+      </class>
+    </classes>
+  </test> 
+</suite> <!-- WebApp -->

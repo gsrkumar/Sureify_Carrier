@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="CarrierDashboard">
+  <test name="HomePage">
+    <parameter name="browsername" value="firefox"></parameter>
+    <parameter name="filename" value="/home/pradeep/CarrierAutomation.ods"></parameter>
+    <parameter name="url" value="staging"></parameter>
+    <classes>
+      <class name="controller.TestNgClass">
+        <methods>
+           
+           <include name="launchSite"></include>
+           <include name="validEmailAndPwd"></include>
+           
+           <include name="HomePage"></include>
+           <!-- <include name="checkHomeSureifyLogo"></include>
+           <include name="checkHeading"></include>
+           <include name="checkHeadingDis"></include>
+           <include name="checkUserName"></include>
+           <include name="checkProfileDropdown"></include>
+           <include name="checkEditProfile"></include>
+           <include name="checkChangePWD"></include>
+           <include name="checkLogout"></include>
+           <include name="checkOverviewIsSelectedOrNot"></include>
+           <include name="selectSales"></include>
+           <include name="selectPHManagement"></include>
+           <include name="selectBehaviorData"></include>
+           <include name="selectEngagement"></include> -->
+           
+           <include name="clickSalesLayout"></include>
+           <include name="clickPolicyHolderLayout"></include>
+           <include name="clickIotDeviceLayout"></include>
+           <include name="clickWellnessLayout"></include>
+           <include name="clickProductsLayout"></include>
+           <include name="clickHealthLayout"></include>
+           <include name="clickPremiumLayout"></include>
+           <include name="clickEngagementLayout"></include>
+           <include name="clickSocialIntLayout"></include>
+           <include name="clickPointsLayout"></include>
+           <include name="clickRewardsLayout"></include>
+           <include name="clickAppAnlyLayout"></include>
+           <include name="clickDeviceLogisLayout"></include>
+      
+        </methods>
+      </class>
+    </classes>
+  </test> 
+</suite> <!-- WebApp -->

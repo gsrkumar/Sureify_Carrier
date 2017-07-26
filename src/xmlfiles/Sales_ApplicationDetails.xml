@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="CarrierDashboard">
+  <test name="SalesPiller_Application">
+    <parameter name="browsername" value="chrome"></parameter>
+    <parameter name="filename" value="/home/pradeep/CarrierAutomation.ods"></parameter>
+    <parameter name="url" value="staging"></parameter>
+    <classes>
+      <class name="controller.TestNgClass">
+        <methods>
+           
+           <include name="launchSite"></include>
+           <include name="validEmailAndPwd"></include>
+           
+           <include name="HomePage"></include>
+           <include name="salesPiller"></include>
+           <include name="checkSalesPillerLink"></include>
+           
+           <include name="clickSalesApplication()"></include>
+           
+          <!--  <include name="click_Id_Sales_AppDetails()"></include> -->
+           <include name="click_Name_Sales_AppDetails()"></include>
+           <!-- <include name="appDetailsHeading()"></include>
+           <include name="appDetailsHeadingDis()"></include>
+           <include name="clickSalesAppDetailsAppLink()"></include>
+           <include name="checkSalesAppDetailsDownload()"></include>
+           <include name="checkSalesAppDetailsPrint()"></include>
+           <include name="clickSalesAppDetailsQuoteLink()"></include> -->
+           <include name="clickSalesEditApp()"></include>
+          
+     <!--      <include name="invalidFName_Sales_AppDetails()"></include>
+           <include name="validFName_Sales_AppDetails()"></include>
+          
+           <include name="invalidLastName_Sales_AppDetails()"></include>
+           <include name="validLastName_Sales_AppDetails()"></include>
+           
+           <include name="invalidEmail_Sales_AppDetails()"></include>
+           <include name="validEmail_Sales_AppDetails()"></include> -->
+           
+     <!--       <include name="invalidPhoneNumber_Sales_AppDetails()"></include>
+           <include name="validPhoneNumber_Sales_AppDetails()"></include> -->
+           
+           <include name="invalidDOB_Sales_AppDetails()"></include>
+           <include name="validDOB_Sales_AppDetails()"></include>
+           
+        </methods>
+      </class>
+    </classes>
+  </test> 
+</suite> <!-- WebApp -->

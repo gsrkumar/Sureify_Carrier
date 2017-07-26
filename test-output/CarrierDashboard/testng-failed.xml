@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [CarrierDashboard]">
+  <test name="SalesPiller_Application(failed)">
+    <parameter name="filename" value="/home/pradeep/CarrierAutomation.ods"/>
+    <parameter name="browsername" value="chrome"/>
+    <parameter name="url" value="staging"/>
+    <classes>
+      <class name="controller.TestNgClass">
+        <methods>
+          <include name="HomePage"/>
+          <include name="validDOB_Sales_AppDetails"/>
+          <include name="salesPiller"/>
+          <include name="tearDown"/>
+          <include name="invalidDOB_Sales_AppDetails"/>
+          <include name="clickSalesEditApp"/>
+          <include name="launchSite"/>
+          <include name="setUp"/>
+          <include name="validEmailAndPwd"/>
+        </methods>
+      </class> <!-- controller.TestNgClass -->
+    </classes>
+  </test> <!-- SalesPiller_Application(failed) -->
+</suite> <!-- Failed suite [CarrierDashboard] -->
